@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "iran";
+    src: url("../fonts/iran/iran_light.woff2"), url("../fonts/iran/iran_medium.woff");
+}
+
+body,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+body {
+    direction: rtl;
+    font-family: "iran";
+    overflow-x: h;
+}
+
+button {
+    font-family: "iran";
+    cursor: pointer;
+}
+
+.active-category {
+    background: #44bfff;
+    color: white !important;
+}
+
+.products__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 40px;
+    li {
+        list-style: none;
+        text-align: center;
+        width: 300px;
+        margin: 20px 15px;
+        border-radius: 15px;
+        box-shadow: -5px 10px 20px rgba(77, 194, 243, 0.3);
+        overflow: hidden;
+        transition: all 0.3s;
+        &:hover{
+            transform: translateY(10px);
+            a{
+                text-shadow: 0 1px #9513d5;
+                font-weight: bold;
+            }
+        }
+        img {
+            border: none;
+        }
+        a {
+            padding: 0 10px;
+            display: block;
+            text-decoration: none;
+            color: black;
+            margin: 10px 0;
+            transition: all 0.3s;
+           
+        }
+        p {
+            color: black;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+    }
+}
+
+.category__container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    span {
+        margin-right: 20px;
+        padding: 10px 0px !important;
+        font-size: 14px !important;
+        text-align: center;
+        border-radius: 25px;
+        border: 1px solid #4dc2f3;
+        cursor: pointer;
+        width: 150px;
+        font-size: 18px;
+        display: inline-block;
+        font-weight: bold;
+        color: #834da5;
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(0.9);
+        }
+    }
+}
+
+.product-info__container {
+    width: 1440px;
+    margin: 40px auto;
+    position: relative;
+    img {
+        display: inline-block;
+        border-radius: 40px;
+        box-shadow: -5px 10px 20px rgba(77, 194, 243, 0.3);
+        display: inline-block;
+        width: 30%;
+    }
+    .content {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 36px;
+        width: 67%;
+        p {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #615370;
+            font-size: 21px;
+        }
+        button {
+            border: none;
+            border-radius: 30px;
+            background: #4dc2f3;
+            box-shadow: 0 9px 15px rgba(77, 194, 243, 0.35);
+            color: white;
+            padding: 11px 20px;
+            font-size: 16px;
+            margin-top: 30px;
+            &:disabled {
+                background: gray !important;
+                box-shadow: none !important;
+                cursor: default !important;
+            }
+        }
+    }
+}
